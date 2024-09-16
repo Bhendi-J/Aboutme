@@ -1,0 +1,89 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+}
+.bgimg{
+    position:fixed;
+    background:url(bird.jpg);
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+    opacity: 0.4; 
+    object-fit: cover ;
+}
+.background{
+    position:fixed;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+}
+.navbar{
+    position:relative;
+    width:80%;
+    height: 85px;
+    margin: 0 auto;
+    padding: 0 70px;
+    background-color: rgba(11, 55, 65, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.welcome{
+    position:static;
+    display:flex;
+    justify-content:left;
+    align-items: flex-start;
+    font-size:30px;
+    color: blanchedalmond;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+}
+
+.nav-elements{
+    position:relative;
+    display: flex;
+    gap: 80px;
+} 
+
+.link{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.nav-elements a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    overflow:hidden;
+    border: 2px solid #81ced7;
+}
+
+span{
+    background-color: #7d70c8;
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition:0.5s;
+    
+
+}
+
+.nav-elements a:hover span{
+    width:100%;
+
+}
